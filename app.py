@@ -107,9 +107,7 @@ model, feature_order = load_model_and_features()
 lottie_science_logo = load_lottieurl("https://lottie.host/5a80572d-3c22-4096-857c-65239a039744/lottie.json")
 
 # Status Animations
-anim_soluble = load_lottieurl("https://lottie.host/805e8701-27d6-45bc-9169-247509c6ebc2/lottie.json") # Water Splash
-anim_partial = load_lottieurl("https://lottie.host/8e296230-1c3f-42e6-993d-368739952566/lottie.json") # Cloudy/Mist
-anim_insoluble = load_lottieurl("https://lottie.host/93245722-02b4-436f-9934-221245553530/lottie.json") # Rock/Solid
+ # Rock/Solid
 
 # --- 5. Helper Functions ---
 def make_3d_view(smiles):
@@ -195,15 +193,15 @@ if predict_btn and smiles_input:
             if prediction > -2.0:
                 solubility_class = "Soluble"
                 color = "#00FF00" # Green
-                lottie_anim = anim_soluble
+                
             elif prediction > -4.0:
                 solubility_class = "Partially Soluble"
                 color = "#FFA500" # Orange
-                lottie_anim = anim_partial
+                
             else:
                 solubility_class = "Insoluble"
                 color = "#FF4B4B" # Red
-                lottie_anim = anim_insoluble
+                
 
             # --- Layout ---
             
@@ -233,12 +231,9 @@ if predict_btn and smiles_input:
             # Split into Animation (Left) and Text Data (Right) for a clean look
             res_c1, res_c2 = st.columns([1, 2])
             
-            with res_c1:
+            
                 # Display Lottie Animation
-                if lottie_anim:
-                    st_lottie(lottie_anim, height=200, key="status_anim")
-                else:
-                    st.warning("⚠️ Animation could not load")
+                
             
             with res_c2:
                 # Display Data Card

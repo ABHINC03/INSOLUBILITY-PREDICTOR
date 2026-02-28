@@ -11,6 +11,12 @@ Mainly aimed for Pharmeutical suites
 ## ScreenShots
 images/image.png
 
+images/image0.png
+
+images/image1.png
+
+images/image2.png
+
 ## Installation
 1. Clone the repository
 git clone https://github.com/username/project-name.git
