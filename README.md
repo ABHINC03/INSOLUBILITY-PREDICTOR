@@ -9,13 +9,13 @@ Simple and interactive UI
 Mainly aimed for Pharmeutical suites
 
 ## ScreenShots
-images/image.png
+![Screenshot 1](images/image.png)
 
-images/image0.png
+![Screenshot 2](images/image0.png)
 
-images/image1.png
+![Screenshot 3](images/image1.png)
 
-images/image2.png
+![Screenshot 4](images/image2.png)
 
 ## Installation
 1. Clone the repository
