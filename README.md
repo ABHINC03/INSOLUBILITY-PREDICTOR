@@ -19,7 +19,7 @@ Mainly aimed for Pharmeutical suites
 
 ## Installation
 1. Clone the repository
-git clone https://github.com/username/project-name.git
+git clone https://github.com/ABHINC03/INSOLUBILITY-PREDICTOR.git
 
 2. Go to the project folder
 cd project-name
